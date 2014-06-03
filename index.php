@@ -1,4 +1,4 @@
-<style>body { background: HOTPINK; color: #b4D455; } input { border: 1px solid #ccc; padding: 5px; margin: 5px; } td { padding: 0 14px; }</style>
+<style>input { border: 1px solid #ccc; padding: 5px; margin: 5px; } td { padding: 0 14px; }</style>
 <pre>
 <table>
 <tr><th>Function</th><th>Result</th></tr>
