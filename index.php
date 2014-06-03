@@ -1,4 +1,4 @@
-<style>input { border: 1px solid #ccc; padding: 5px; margin: 5px; } td { padding: 0 14px; }</style>
+<style>body { background: HOTPINK; color: #b4D455; } input { border: 1px solid #ccc; padding: 5px; margin: 5px; } td { padding: 0 14px; }</style>
 <pre>
 <table>
 <tr><th>Function</th><th>Result</th></tr>
@@ -43,8 +43,15 @@ if (isset($_GET['string'])) {
 ?>
 </table>
 <form method="get">
-<table>
-<tr><td><label>String:</label></td><td><input name="string" type="text" style="width: 200px"></td></tr>
-<tr><td></td><td><input name="button" type="submit" value="Calculate!"></td></tr>
+    <table>
+        <tr>
+            <td><label>String:</label></td>
+            <td><input name="string" type="text" style="width: 200px"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input name="button" type="submit" value="Calculate!"></td>
+        </tr>
+    </table>
 </form>
 </pre>
