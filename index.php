@@ -80,6 +80,10 @@
         </table>
     </form>
     <?php
+    if (!file_exists('auth.json')) {
+        file_put_contents('auth.json', json_encode([]));
+    }
+    
     $cache = json_decode(file_get_contents('auth.json'), true);
 
     if (isset($_GET['url']) and isset($_GET['username']) and isset($_GET['password'])) {
