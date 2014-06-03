@@ -80,8 +80,9 @@
         </table>
     </form>
     <?php
+    $cache = json_decode(file_get_contents('auth.json'), true);
+
     if (isset($_GET['url']) and isset($_GET['username']) and isset($_GET['password'])) {
-        $cache = json_decode(file_get_contents('auth.json'), true);
         $url  = $_GET['url'];
         $user = mb_strtolower($_GET['username'], 'utf-8');
         $pass = mb_strtolower($_GET['password'], 'utf-8');
